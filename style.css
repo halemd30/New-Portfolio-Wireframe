@@ -5,22 +5,20 @@
 
 body {
   margin: 0;
-  font-family: raleway;
 }
 
 main {
   margin-top: 50px;
 }
 
+main header h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
 main p {
   font-weight: 340;
   font-size: 18px;
-}
-
-.header img {
-  margin: auto;
-  display: block;
-  width: 250px;
 }
 
 .section {
@@ -30,8 +28,7 @@ main p {
 }
 
 .section h2 {
-  border-bottom: 2px solid #CB6225;
-  font-family: Sacramento;
+  border-bottom: 2px solid black;
   font-size: 50px;
 }
 
@@ -56,14 +53,12 @@ main p {
   list-style-type: none;
 }
 
-.portfolio li a {
+.portfolio li .imgPlaceholder {
   text-decoration: none;
   color: black;
-  font-size: 18px;
-}
-
-.portfolio li a:hover {
-  color: #CB6225;
+  font-size: 38px;
+  border: 1px solid black;
+  padding: 20px;
 }
 
 .portfolio li .skills {
@@ -76,7 +71,6 @@ main p {
   display: block;
   font-size: 35px;
   padding-bottom: 3px;
-  color: #CB6225;
 }
 
 .portfolio li .skills .fa-html5, .portfolio li .skills .fa-css3-alt {
@@ -84,13 +78,12 @@ main p {
 }
 
 .portfolio li .projectTitleMobile {
+  padding-top: 10px;
   padding-left: 15px;
   padding-bottom: 15px;
-  top: -15px;
   position: relative;
-  border-bottom: 1px solid #CB6225;
+  border-bottom: 1px solid black;
   width: 300px;
-  font-family: Alegreya;
 }
 
 .portfolio li .projectTitleMobile a {
@@ -176,15 +169,17 @@ main p {
     margin-right: 40px;
     margin-top: 150px;
   }
-  .portfolio ul li .skills {
-    margin-left: 22px !important;
+  .portfolio .imgPlaceholder {
+    top: 15px;
+    position: relative;
+    display: block;
+    padding: 52px !important;
   }
-  .portfolio ul li .skills .fa-html5, .portfolio ul li .skills .fa-css3-alt {
-    padding-right: 2px;
+  .portfolio .placeholder2 {
+    margin-top: -13px;
   }
   .portfolio p.projectTitleDesktop {
     display: block;
-    top: -18px;
     right: 10px;
     position: relative;
     font-family: Alegreya;
@@ -221,7 +216,7 @@ main p {
     top: 13px;
   }
   .emptyFlex2 .calvinQuizDesc {
-    top: 47px;
+    top: 57px;
     position: relative;
   }
   .emptyFlex2 .portfolioBorder {
@@ -229,7 +224,7 @@ main p {
     top: 233px;
   }
   .emptyFlex2 .oldPortfolioDesc {
-    top: 161px;
+    top: 211px;
     position: relative;
     padding-right: 16px;
   }
